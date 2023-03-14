@@ -1,0 +1,29 @@
+.authForm{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.authForm>input{
+    outline: none;
+    padding: 10px 20px;
+    width: 250px;
+    border-radius: 5px;
+}
+.submitButton{
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3b4d75;
+    border: none;
+    background: white;
+}
+.submitButton:hover{
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+.invalid{
+    border: 2px solid rgb(255, 47, 47);
+}

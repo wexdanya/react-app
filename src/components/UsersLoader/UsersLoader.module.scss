@@ -1,0 +1,12 @@
+.userLoader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(75,0,130);
+    background: linear-gradient(180deg, rgba(75,0,130,1) 0%, rgba(69,43,100,1) 55%, rgba(69,44,99,1) 56%, rgba(29,17,96,1) 100%);
+    .title{
+        font-size: 46px;
+        color: white;
+        text-transform: uppercase;
+    }
+}

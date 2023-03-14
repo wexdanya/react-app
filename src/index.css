@@ -1,5 +1,15 @@
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
 body {
+  width: 100%;
+  background-color: #ffffff;
   margin: 0;
+  padding: o;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

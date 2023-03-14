@@ -1,0 +1,25 @@
+@use "/src/common/styles/template" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5em;
+  padding: 0 10%;
+}
+.light {
+  @extend %light;
+}
+.dark {
+  @extend %dark;
+}
+.rightSite{
+    display: flex;
+    align-items: center;
+    gap:20%;
+}
+.button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}

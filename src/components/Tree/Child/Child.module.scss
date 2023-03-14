@@ -1,0 +1,14 @@
+@use "/src/common/styles/template" as *;
+
+
+.childDiv{
+    height: 500px;
+    padding: 50px 10%;
+}
+
+.light {
+    @extend %light;
+  }
+  .dark {
+    @extend %dark;
+  }
