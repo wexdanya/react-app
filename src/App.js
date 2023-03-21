@@ -12,7 +12,6 @@ const App = () => {
     id: 20,
     age: 40,
   });
-  console.log(user);
   return (
     <LangContext.Provider value={[lang, setLang]}>
       <ThemeContext.Provider value={[theme, setTheme]}>
