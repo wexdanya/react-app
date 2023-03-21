@@ -1,12 +1,15 @@
-import React from 'react';
-import SubParent from './../SubParent/index';
+import React from "react";
+import SubParent from "./../SubParent/index";
+import { ThemeContext } from "./../../../contexts";
 
 const Parent = (props) => {
-    return (
-        <>
-            <SubParent />
-        </>
-    );
-}
+    const {theme} = props;
+    console.log(theme);
+    return <SubParent />;
+};
 
-export default Parent;
+const ParentWithTheme = (props) => {
+  return <ThemeContext.Consumer>{(theme) => {return <Parent theme={theme}/>}}</ThemeContext.Consumer>;
+};
+
+export default ParentWithTheme;

@@ -1,0 +1,64 @@
+.form {
+  margin: 40px auto;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 30px;
+  text-align: left;
+  padding: 35px 70px;
+  border: 1px solid rgb(216, 216, 216);
+  .input {
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(216, 216, 216);
+    border-radius: 5px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .error {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    position: absolute;
+    margin: 12px 0;
+    padding: 7px 20px;
+    background-color: rgba(216, 65, 65, 0.697);
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    &::before {
+      width: 0;
+      height: 0;
+      border-width: 0 6px 13px 6px;
+      border-color: transparent transparent rgba(216, 65, 65, 0.697) transparent;
+      border-style: solid;
+      position: absolute;
+      content: "";
+      top: -13px;
+      left: 10px;
+    }
+  }
+
+  .button {
+    outline: none;
+    padding: 12px;
+    border: none;
+    background-color: rgb(175, 175, 175);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    &:hover {
+      background-color: rgb(120, 119, 119);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import styles from "./Child.module.scss";
 import cx from "classnames";
 import CONSTANTS from "../../../constants";
 
-const {THEMES} = CONSTANTS
+const { THEMES } = CONSTANTS;
 
 const Child = () => {
   return (
@@ -14,7 +14,10 @@ const Child = () => {
         return (
           <ThemeContext.Consumer>
             {([theme]) => {
-                const childClasses = cx(styles.childDiv,{ [styles.dark]: theme === THEMES.LIGHT,[styles.light]: theme === THEMES.DARK})
+              const childClasses = cx(styles.childDiv, {
+                [styles.dark]: theme === THEMES.LIGHT,
+                [styles.light]: theme === THEMES.DARK,
+              });
               return (
                 <div className={childClasses}>
                   {lang === "ENG" ? <h2>User profile</h2> : <h2>Профиль</h2>}
